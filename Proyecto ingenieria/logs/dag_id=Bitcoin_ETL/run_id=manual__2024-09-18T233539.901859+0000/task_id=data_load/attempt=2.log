@@ -1,0 +1,36 @@
+[2024-09-18T23:40:50.816+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-18T23:40:51.008+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.data_load manual__2024-09-18T23:35:39.901859+00:00 [queued]>
+[2024-09-18T23:40:51.020+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.data_load manual__2024-09-18T23:35:39.901859+00:00 [queued]>
+[2024-09-18T23:40:51.021+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 6
+[2024-09-18T23:40:51.038+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): data_load> on 2024-09-18 23:35:39.901859+00:00
+[2024-09-18T23:40:51.048+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=853) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-18T23:40:51.050+0000] {standard_task_runner.py:72} INFO - Started process 855 to run task
+[2024-09-18T23:40:51.050+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'data_load', 'manual__2024-09-18T23:35:39.901859+00:00', '--job-id', '511', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction_modularizad.py', '--cfg-path', '/tmp/tmpy7t1pppz']
+[2024-09-18T23:40:51.052+0000] {standard_task_runner.py:105} INFO - Job 511: Subtask data_load
+[2024-09-18T23:40:51.108+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.data_load manual__2024-09-18T23:35:39.901859+00:00 [running]> on host dc0271a0188f
+[2024-09-18T23:40:51.212+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='data_load' AIRFLOW_CTX_EXECUTION_DATE='2024-09-18T23:35:39.901859+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-18T23:35:39.901859+00:00'
+[2024-09-18T23:40:51.213+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-18T23:40:51.240+0000] {logging_mixin.py:190} INFO - data file path /opt/***/dags/tmp_files/data.csv
+[2024-09-18T23:40:51.266+0000] {logging_mixin.py:190} INFO - CSV data                       id  ...                          key_id_date_time
+0                bitcoin  ...               bitcoin|2024-09-18 23:40:39
+1               ethereum  ...              ethereum|2024-09-18 23:40:39
+2                 tether  ...                tether|2024-09-18 23:40:39
+3           binance-coin  ...          binance-coin|2024-09-18 23:40:39
+4                 solana  ...                solana|2024-09-18 23:40:39
+..                   ...  ...                                       ...
+95                   amp  ...                   amp|2024-09-18 23:40:39
+96                  dash  ...                  dash|2024-09-18 23:40:39
+97                  holo  ...                  holo|2024-09-18 23:40:39
+98  golem-network-tokens  ...  golem-network-tokens|2024-09-18 23:40:39
+99                  just  ...                  just|2024-09-18 23:40:39
+
+[100 rows x 5 columns]
+[2024-09-18T23:40:52.510+0000] {logging_mixin.py:190} INFO - se va a insertar la table nicolas_rivas_coderhouse.cripto_price_new_data
+[2024-09-18T23:40:53.930+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-18T23:40:53.942+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-18T23:40:53.943+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Bitcoin_ETL, task_id=data_load, run_id=manual__2024-09-18T23:35:39.901859+00:00, execution_date=20240918T233539, start_date=20240918T234051, end_date=20240918T234053
+[2024-09-18T23:40:53.996+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-18T23:40:54.015+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-18T23:40:54.017+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

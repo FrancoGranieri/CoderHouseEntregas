@@ -1,0 +1,20 @@
+[2024-09-17T21:16:33.217+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-17T21:16:33.392+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.cargar_data manual__2024-09-17T21:11:28.524827+00:00 [queued]>
+[2024-09-17T21:16:33.401+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.cargar_data manual__2024-09-17T21:11:28.524827+00:00 [queued]>
+[2024-09-17T21:16:33.403+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 6
+[2024-09-17T21:16:33.419+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cargar_data> on 2024-09-17 21:11:28.524827+00:00
+[2024-09-17T21:16:33.427+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=178) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-17T21:16:33.429+0000] {standard_task_runner.py:72} INFO - Started process 180 to run task
+[2024-09-17T21:16:33.429+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'cargar_data', 'manual__2024-09-17T21:11:28.524827+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction.py', '--cfg-path', '/tmp/tmp4njg6f7w']
+[2024-09-17T21:16:33.431+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask cargar_data
+[2024-09-17T21:16:33.486+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.cargar_data manual__2024-09-17T21:11:28.524827+00:00 [running]> on host 868230e8e335
+[2024-09-17T21:16:33.578+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='cargar_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-17T21:11:28.524827+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-17T21:11:28.524827+00:00'
+[2024-09-17T21:16:33.580+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-17T21:16:40.231+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-17T21:16:40.246+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-17T21:16:40.247+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Bitcoin_ETL, task_id=cargar_data, run_id=manual__2024-09-17T21:11:28.524827+00:00, execution_date=20240917T211128, start_date=20240917T211633, end_date=20240917T211640
+[2024-09-17T21:16:40.311+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-17T21:16:40.330+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-17T21:16:40.333+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

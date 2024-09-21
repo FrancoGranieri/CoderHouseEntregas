@@ -1,0 +1,149 @@
+[2024-09-05T00:14:57.140+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-05T00:14:57.230+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-05T00:14:35.532330+00:00 [queued]>
+[2024-09-05T00:14:57.262+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-05T00:14:35.532330+00:00 [queued]>
+[2024-09-05T00:14:57.263+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2024-09-05T00:14:57.311+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extraer_data> on 2024-09-05 00:14:35.532330+00:00
+[2024-09-05T00:14:57.356+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=83) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-05T00:14:57.361+0000] {standard_task_runner.py:72} INFO - Started process 87 to run task
+[2024-09-05T00:14:57.365+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'extraer_data', 'manual__2024-09-05T00:14:35.532330+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction.py', '--cfg-path', '/tmp/tmpso3t5_vx']
+[2024-09-05T00:14:57.374+0000] {standard_task_runner.py:105} INFO - Job 36: Subtask extraer_data
+[2024-09-05T00:14:57.727+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-05T00:14:35.532330+00:00 [running]> on host b08b4929ee11
+[2024-09-05T00:14:58.097+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='extraer_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-05T00:14:35.532330+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-05T00:14:35.532330+00:00'
+[2024-09-05T00:14:58.101+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-05T00:14:58.102+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-05T00:14:58.104+0000] {logging_mixin.py:190} INFO - Current task name:extraer_data state:running start_date:2024-09-05 00:14:57.232894+00:00
+[2024-09-05T00:14:58.110+0000] {logging_mixin.py:190} INFO - Dag name:Bitcoin_ETL and current dag run status:running
+[2024-09-05T00:14:58.114+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-05T00:14:58.925+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/API_Crypto_Extraction.py", line 34, in extraer_data
+    body_dict = response.json()
+                ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-09-05T00:14:58.991+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-09-05T00:14:58.996+0000] {logging_mixin.py:190} INFO - Task start:2024-09-05 00:14:57.232894+00:00 end:2024-09-05 00:14:58.990586+00:00 duration:1.757692
+[2024-09-05T00:14:58.998+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): extraer_data> dag:<DAG: Bitcoin_ETL> dagrun:<DagRun Bitcoin_ETL @ 2024-09-05 00:14:35.532330+00:00: manual__2024-09-05T00:14:35.532330+00:00, state:running, queued_at: 2024-09-05 00:14:35.631520+00:00. externally triggered: True>
+[2024-09-05T00:14:59.000+0000] {logging_mixin.py:190} INFO - Failure caused by Expecting value: line 1 column 1 (char 0)
+[2024-09-05T00:14:59.002+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=Bitcoin_ETL, task_id=extraer_data, run_id=manual__2024-09-05T00:14:35.532330+00:00, execution_date=20240905T001435, start_date=20240905T001457, end_date=20240905T001458
+[2024-09-05T00:14:59.110+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-05T00:14:59.113+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 36 for task extraer_data (Expecting value: line 1 column 1 (char 0); 87)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/API_Crypto_Extraction.py", line 34, in extraer_data
+    body_dict = response.json()
+                ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-09-05T00:14:59.172+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-09-05T00:14:59.250+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-05T00:14:59.254+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

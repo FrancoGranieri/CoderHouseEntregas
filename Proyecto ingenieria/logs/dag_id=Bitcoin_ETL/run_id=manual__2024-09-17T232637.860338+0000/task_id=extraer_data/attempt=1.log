@@ -1,0 +1,112 @@
+[2024-09-17T23:26:39.797+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-17T23:26:39.981+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T23:26:37.860338+00:00 [queued]>
+[2024-09-17T23:26:39.991+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T23:26:37.860338+00:00 [queued]>
+[2024-09-17T23:26:39.992+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 6
+[2024-09-17T23:26:40.008+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extraer_data> on 2024-09-17 23:26:37.860338+00:00
+[2024-09-17T23:26:40.016+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=246) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-17T23:26:40.018+0000] {standard_task_runner.py:72} INFO - Started process 248 to run task
+[2024-09-17T23:26:40.019+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'extraer_data', 'manual__2024-09-17T23:26:37.860338+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction.py', '--cfg-path', '/tmp/tmpnr702e7k']
+[2024-09-17T23:26:40.022+0000] {standard_task_runner.py:105} INFO - Job 39: Subtask extraer_data
+[2024-09-17T23:26:40.082+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T23:26:37.860338+00:00 [running]> on host 868230e8e335
+[2024-09-17T23:26:40.185+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='extraer_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-17T23:26:37.860338+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-17T23:26:37.860338+00:00'
+[2024-09-17T23:26:40.187+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-17T23:26:41.399+0000] {logging_mixin.py:190} INFO - df final es Index(['id', 'name', 'priceUsd', 'date_time', 'key_id_date_time'], dtype='object')
+[2024-09-17T23:26:42.712+0000] {logging_mixin.py:190} INFO - las columnas de laquery son ['id', 'name', 'priceUsd', 'date_time', 'key_id_date_time'] y los datos [('bitcoin', 'Bitcoin', '60146.2107168546532737', '2024-09-17 23:26:41', 'bitcoin|2024-09-17 23:26:41'), ('ethereum', 'Ethereum', '2334.2013623010580087', '2024-09-17 23:26:41', 'ethereum|2024-09-17 23:26:41'), ('tether', 'Tether', '1.0003907622212520', '2024-09-17 23:26:41', 'tether|2024-09-17 23:26:41'), ('binance-coin', 'BNB', '544.5810304748711355', '2024-09-17 23:26:41', 'binance-coin|2024-09-17 23:26:41'), ('solana', 'Solana', '131.3726146984377445', '2024-09-17 23:26:41', 'solana|2024-09-17 23:26:41'), ('usd-coin', 'USDC', '1.0000989340635846', '2024-09-17 23:26:41', 'usd-coin|2024-09-17 23:26:41'), ('xrp', 'XRP', '0.5847874763498728', '2024-09-17 23:26:41', 'xrp|2024-09-17 23:26:41'), ('steth', 'Lido Staked ETH', '2329.7876580661891560', '2024-09-17 23:26:41', 'steth|2024-09-17 23:26:41'), ('dogecoin', 'Dogecoin', '0.1008416773130650', '2024-09-17 23:26:41', 'dogecoin|2024-09-17 23:26:41'), ('tron', 'TRON', '0.1500006029856446', '2024-09-17 23:26:41', 'tron|2024-09-17 23:26:41'), ('cardano', 'Cardano', '0.3338896863985332', '2024-09-17 23:26:41', 'cardano|2024-09-17 23:26:41'), ('avalanche', 'Avalanche', '23.7392091417141199', '2024-09-17 23:26:41', 'avalanche|2024-09-17 23:26:41'), ('wrapped-bitcoin', 'Wrapped Bitcoin', '60101.8491896951124107', '2024-09-17 23:26:41', 'wrapped-bitcoin|2024-09-17 23:26:41'), ('shiba-inu', 'Shiba Inu', '0.0000132676888958', '2024-09-17 23:26:41', 'shiba-inu|2024-09-17 23:26:41'), ('chainlink', 'Chainlink', '10.5942480049274107', '2024-09-17 23:26:41', 'chainlink|2024-09-17 23:26:41'), ('bitcoin-cash', 'Bitcoin Cash', '314.0090773917495085', '2024-09-17 23:26:41', 'bitcoin-cash|2024-09-17 23:26:41'), ('polkadot', 'Polkadot', '4.1526634119118317', '2024-09-17 23:26:41', 'polkadot|2024-09-17 23:26:41'), ('multi-collateral-dai', 'Multi Collateral DAI', '1.0009575886623108', '2024-09-17 23:26:41', 'multi-collateral-dai|2024-09-17 23:26:41'), ('unus-sed-leo', 'UNUS SED LEO', '5.7247275169415341', '2024-09-17 23:26:41', 'unus-sed-leo|2024-09-17 23:26:41'), ('litecoin', 'Litecoin', '63.6062715445692963', '2024-09-17 23:26:41', 'litecoin|2024-09-17 23:26:41'), ('near-protocol', 'NEAR Protocol', '4.1288158223689668', '2024-09-17 23:26:41', 'near-protocol|2024-09-17 23:26:41'), ('uniswap', 'Uniswap', '6.7646450226228387', '2024-09-17 23:26:41', 'uniswap|2024-09-17 23:26:41'), ('internet-computer', 'Internet Computer', '7.9052457569471912', '2024-09-17 23:26:41', 'internet-computer|2024-09-17 23:26:41'), ('fetch', 'Artificial Superintelligence Alliance', '1.3522836161955555', '2024-09-17 23:26:41', 'fetch|2024-09-17 23:26:41'), ('monero', 'Monero', '171.9596087542008730', '2024-09-17 23:26:41', 'monero|2024-09-17 23:26:41'), ('stellar', 'Stellar', '0.0946897900217437', '2024-09-17 23:26:41', 'stellar|2024-09-17 23:26:41'), ('ethereum-classic', 'Ethereum Classic', '17.7089851589947869', '2024-09-17 23:26:41', 'ethereum-classic|2024-09-17 23:26:41'), ('okb', 'OKB', '38.0987924920976507', '2024-09-17 23:26:41', 'okb|2024-09-17 23:26:41'), ('stacks', 'Stacks', '1.5215555767732224', '2024-09-17 23:26:41', 'stacks|2024-09-17 23:26:41'), ('aave', 'Aave', '140.3401637698366846', '2024-09-17 23:26:41', 'aave|2024-09-17 23:26:41'), ('filecoin', 'Filecoin', '3.4555081461124688', '2024-09-17 23:26:41', 'filecoin|2024-09-17 23:26:41'), ('crypto-com-coin', 'Crypto.com Coin', '0.0798419994428061', '2024-09-17 23:26:41', 'crypto-com-coin|2024-09-17 23:26:41'), ('vechain', 'VeChain', '0.0212014519544871', '2024-09-17 23:26:41', 'vechain|2024-09-17 23:26:41'), ('fantom', 'Fantom', '0.5743676499889743', '2024-09-17 23:26:41', 'fantom|2024-09-17 23:26:41'), ('injective-protocol', 'Injective', '19.4425751450074767', '2024-09-17 23:26:41', 'injective-protocol|2024-09-17 23:26:41'), ('the-graph', 'The Graph', '0.1414053259166506', '2024-09-17 23:26:41', 'the-graph|2024-09-17 23:26:41'), ('thorchain', 'THORChain', '4.0199873626220615', '2024-09-17 23:26:41', 'thorchain|2024-09-17 23:26:41'), ('maker', 'Maker', '1486.0338667395261621', '2024-09-17 23:26:41', 'maker|2024-09-17 23:26:41'), ('theta', 'THETA', '1.2909933362249887', '2024-09-17 23:26:41', 'theta|2024-09-17 23:26:41'), ('arweave', 'Arweave', '18.4917921896864683', '2024-09-17 23:26:41', 'arweave|2024-09-17 23:26:41'), ('polygon', 'Polygon', '0.3813405510262888', '2024-09-17 23:26:41', 'polygon|2024-09-17 23:26:41'), ('helium', 'Helium', '6.8105290251566263', '2024-09-17 23:26:41', 'helium|2024-09-17 23:26:41'), ('cosmos', 'Cosmos', '4.1688438894644250', '2024-09-17 23:26:41', 'cosmos|2024-09-17 23:26:41'), ('algorand', 'Algorand', '0.1242458968448700', '2024-09-17 23:26:41', 'algorand|2024-09-17 23:26:41'), ('bitcoin-sv', 'Bitcoin SV', '47.1241232191994810', '2024-09-17 23:26:41', 'bitcoin-sv|2024-09-17 23:26:41'), ('kucoin-token', 'KuCoin Token', '7.7599661734274231', '2024-09-17 23:26:41', 'kucoin-token|2024-09-17 23:26:41'), ('lido-dao', 'Lido DAO', '0.9883126540021737', '2024-09-17 23:26:41', 'lido-dao|2024-09-17 23:26:41'), ('quant', 'Quant', '69.4230765663082085', '2024-09-17 23:26:41', 'quant|2024-09-17 23:26:41'), ('flow', 'Flow', '0.5368593964904249', '2024-09-17 23:26:41', 'flow|2024-09-17 23:26:41'), ('nervos-network', 'Nervos Network', '0.0167304837719868', '2024-09-17 23:26:41', 'nervos-network|2024-09-17 23:26:41'), ('gatetoken', 'GateToken', '8.1945021989503587', '2024-09-17 23:26:41', 'gatetoken|2024-09-17 23:26:41'), ('hedera-hashgraph', 'Hedera Hashgraph', '0.0497308491673958', '2024-09-17 23:26:41', 'hedera-hashgraph|2024-09-17 23:26:41'), ('eos', 'EOS', '0.4793085330070513', '2024-09-17 23:26:41', 'eos|2024-09-17 23:26:41'), ('axie-infinity', 'Axie Infinity', '4.6390493737519835', '2024-09-17 23:26:41', 'axie-infinity|2024-09-17 23:26:41'), ('neo', 'Neo', '9.2831594351186607', '2024-09-17 23:26:41', 'neo|2024-09-17 23:26:41'), ('tezos', 'Tezos', '0.6369393419000690', '2024-09-17 23:26:41', 'tezos|2024-09-17 23:26:41'), ('gala', 'Gala', '0.0180719786839133', '2024-09-17 23:26:41', 'gala|2024-09-17 23:26:41'), ('conflux-network', 'Conflux', '0.1403433053349686', '2024-09-17 23:26:41', 'conflux-network|2024-09-17 23:26:41'), ('elrond-egld', 'MultiversX', '25.7065170761236312', '2024-09-17 23:26:41', 'elrond-egld|2024-09-17 23:26:41'), ('akash-network', 'Akash Network', '2.4834088412795217', '2024-09-17 23:26:41', 'akash-network|2024-09-17 23:26:41'), ('ecash', 'eCash', '0.0000310521421072', '2024-09-17 23:26:41', 'ecash|2024-09-17 23:26:41'), ('the-sandbox', 'The Sandbox', '0.2521482207686228', '2024-09-17 23:26:41', 'the-sandbox|2024-09-17 23:26:41'), ('decentraland', 'Decentraland', '0.2762322660230675', '2024-09-17 23:26:41', 'decentraland|2024-09-17 23:26:41'), ('pendle', 'Pendle', '3.3197717302640682', '2024-09-17 23:26:41', 'pendle|2024-09-17 23:26:41'), ('mantra-dao', 'MANTRA DAO', '1.0485070048989985', '2024-09-17 23:26:41', 'mantra-dao|2024-09-17 23:26:41'), ('nexo', 'Nexo', '0.9241863011857113', '2024-09-17 23:26:41', 'nexo|2024-09-17 23:26:41'), ('klaytn', 'Klaytn', '0.1312791981236937', '2024-09-17 23:26:41', 'klaytn|2024-09-17 23:26:41'), ('trueusd', 'TrueUSD', '0.9989890667289355', '2024-09-17 23:26:41', 'trueusd|2024-09-17 23:26:41'), ('mina', 'Mina', '0.4228684986217672', '2024-09-17 23:26:41', 'mina|2024-09-17 23:26:41'), ('zcash', 'Zcash', '29.6570025735285825', '2024-09-17 23:26:41', 'zcash|2024-09-17 23:26:41'), ('chiliz', 'Chiliz', '0.0519588163223527', '2024-09-17 23:26:41', 'chiliz|2024-09-17 23:26:41'), ('pancakeswap', 'PancakeSwap', '1.7395622293496727', '2024-09-17 23:26:41', 'pancakeswap|2024-09-17 23:26:41'), ('dexe', 'DeXe', '7.6440516954130843', '2024-09-17 23:26:41', 'dexe|2024-09-17 23:26:41'), ('livepeer', 'Livepeer', '12.4913155315768728', '2024-09-17 23:26:41', 'livepeer|2024-09-17 23:26:41'), ('ftx-token', 'FTX Token', '1.2889340913161134', '2024-09-17 23:26:41', 'ftx-token|2024-09-17 23:26:41'), ('oasis-network', 'Oasis', '0.0600028045615857', '2024-09-17 23:26:41', 'oasis-network|2024-09-17 23:26:41'), ('fei-protocol', 'Fei Protocol', '0.9909809559874976', '2024-09-17 23:26:41', 'fei-protocol|2024-09-17 23:26:41'), ('aioz-network', 'AIOZ Network', '0.3743875649312228', '2024-09-17 23:26:41', 'aioz-network|2024-09-17 23:26:41'), ('iota', 'IOTA', '0.1225707056828513', '2024-09-17 23:26:41', 'iota|2024-09-17 23:26:41'), ('superfarm', 'SuperVerse', '0.8530642855404778', '2024-09-17 23:26:41', 'superfarm|2024-09-17 23:26:41'), ('theta-fuel', 'Theta Fuel', '0.0607943663367127', '2024-09-17 23:26:41', 'theta-fuel|2024-09-17 23:26:41'), ('gnosis-gno', 'Gnosis', '150.5353924175452066', '2024-09-17 23:26:41', 'gnosis-gno|2024-09-17 23:26:41'), ('raydium', 'Raydium', '1.4639825191334447', '2024-09-17 23:26:41', 'raydium|2024-09-17 23:26:41'), ('compound', 'Compound', '42.5215828843242229', '2024-09-17 23:26:41', 'compound|2024-09-17 23:26:41'), ('trust-wallet-token', 'Trust Wallet Token', '0.8247315534637796', '2024-09-17 23:26:41', 'trust-wallet-token|2024-09-17 23:26:41'), ('nxm', 'NXM', '51.9293413212077351', '2024-09-17 23:26:41', 'nxm|2024-09-17 23:26:41'), ('xinfin-network', 'XinFin Network', '0.0276850067379919', '2024-09-17 23:26:41', 'xinfin-network|2024-09-17 23:26:41'), ('kava', 'Kava', '0.3045657023546486', '2024-09-17 23:26:41', 'kava|2024-09-17 23:26:41'), ('synthetix-network-token', 'Synthetix', '1.4075904498081789', '2024-09-17 23:26:41', 'synthetix-network-token|2024-09-17 23:26:41'), ('curve-dao-token', 'Curve DAO Token', '0.2684338551195176', '2024-09-17 23:26:41', 'curve-dao-token|2024-09-17 23:26:41'), ('iotex', 'IoTeX', '0.0340084224555291', '2024-09-17 23:26:41', 'iotex|2024-09-17 23:26:41'), ('reserve-rights', 'Reserve Rights', '0.0060695367839395', '2024-09-17 23:26:41', 'reserve-rights|2024-09-17 23:26:41'), ('kusama', 'Kusama', '20.0714493819994556', '2024-09-17 23:26:41', 'kusama|2024-09-17 23:26:41'), ('1inch', '1inch Network', '0.2401101520501964', '2024-09-17 23:26:41', '1inch|2024-09-17 23:26:41'), ('wootrade', 'WOO', '0.1628245067830452', '2024-09-17 23:26:41', 'wootrade|2024-09-17 23:26:41'), ('amp', 'Amp', '0.0036516165272450', '2024-09-17 23:26:41', 'amp|2024-09-17 23:26:41'), ('dash', 'Dash', '24.0422097749373005', '2024-09-17 23:26:41', 'dash|2024-09-17 23:26:41'), ('holo', 'Holo', '0.0015993927479554', '2024-09-17 23:26:41', 'holo|2024-09-17 23:26:41'), ('just', 'JUST', '0.0280079740055875', '2024-09-17 23:26:41', 'just|2024-09-17 23:26:41'), ('golem-network-tokens', 'Golem', '0.2720482100790617', '2024-09-17 23:26:41', 'golem-network-tokens|2024-09-17 23:26:41')]
+[2024-09-17T23:26:43.468+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/API_Crypto_Extraction.py", line 91, in cargar_data_a_base
+    execute_values(cur,insert_data_in_temp_query,values)
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "priceusd" of relation "cripto_price_new_data" does not exist
+
+[2024-09-17T23:26:43.490+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=Bitcoin_ETL, task_id=extraer_data, run_id=manual__2024-09-17T23:26:37.860338+00:00, execution_date=20240917T232637, start_date=20240917T232639, end_date=20240917T232643
+[2024-09-17T23:26:43.562+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-17T23:26:43.563+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 39 for task extraer_data (column "priceusd" of relation "cripto_price_new_data" does not exist
+; 248)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/API_Crypto_Extraction.py", line 91, in cargar_data_a_base
+    execute_values(cur,insert_data_in_temp_query,values)
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "priceusd" of relation "cripto_price_new_data" does not exist
+
+[2024-09-17T23:26:43.609+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-17T23:26:43.627+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-17T23:26:43.629+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

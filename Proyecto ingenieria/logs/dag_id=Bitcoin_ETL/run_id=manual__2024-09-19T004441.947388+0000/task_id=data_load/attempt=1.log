@@ -1,0 +1,36 @@
+[2024-09-19T00:54:54.052+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-19T00:54:54.225+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.data_load manual__2024-09-19T00:44:41.947388+00:00 [queued]>
+[2024-09-19T00:54:54.235+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.data_load manual__2024-09-19T00:44:41.947388+00:00 [queued]>
+[2024-09-19T00:54:54.235+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 6
+[2024-09-19T00:54:54.250+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): data_load> on 2024-09-19 00:44:41.947388+00:00
+[2024-09-19T00:54:54.258+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=151) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-19T00:54:54.260+0000] {standard_task_runner.py:72} INFO - Started process 153 to run task
+[2024-09-19T00:54:54.260+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'data_load', 'manual__2024-09-19T00:44:41.947388+00:00', '--job-id', '611', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction_modularizad.py', '--cfg-path', '/tmp/tmp9mszjo9n']
+[2024-09-19T00:54:54.263+0000] {standard_task_runner.py:105} INFO - Job 611: Subtask data_load
+[2024-09-19T00:54:54.314+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.data_load manual__2024-09-19T00:44:41.947388+00:00 [running]> on host f79cd32f599d
+[2024-09-19T00:54:54.415+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nicolas.rivas@taligent.com.ar' AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='data_load' AIRFLOW_CTX_EXECUTION_DATE='2024-09-19T00:44:41.947388+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-19T00:44:41.947388+00:00'
+[2024-09-19T00:54:54.416+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-19T00:54:54.444+0000] {logging_mixin.py:190} INFO - data file path /opt/***/dags/tmp_files/data2024-09-19 00:54:51.946964.csv
+[2024-09-19T00:54:54.470+0000] {logging_mixin.py:190} INFO - CSV data                       id  ...                          key_id_date_time
+0                bitcoin  ...               bitcoin|2024-09-19 00:54:51
+1               ethereum  ...              ethereum|2024-09-19 00:54:51
+2                 tether  ...                tether|2024-09-19 00:54:51
+3           binance-coin  ...          binance-coin|2024-09-19 00:54:51
+4                 solana  ...                solana|2024-09-19 00:54:51
+..                   ...  ...                                       ...
+95                   amp  ...                   amp|2024-09-19 00:54:51
+96                  dash  ...                  dash|2024-09-19 00:54:51
+97                  holo  ...                  holo|2024-09-19 00:54:51
+98  golem-network-tokens  ...  golem-network-tokens|2024-09-19 00:54:51
+99                  just  ...                  just|2024-09-19 00:54:51
+
+[100 rows x 5 columns]
+[2024-09-19T00:54:55.790+0000] {logging_mixin.py:190} INFO - se va a insertar la table nicolas_rivas_coderhouse.cripto_price_new_data
+[2024-09-19T00:54:57.207+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-19T00:54:57.222+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-19T00:54:57.222+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Bitcoin_ETL, task_id=data_load, run_id=manual__2024-09-19T00:44:41.947388+00:00, execution_date=20240919T004441, start_date=20240919T005454, end_date=20240919T005457
+[2024-09-19T00:54:57.247+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-19T00:54:57.265+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-19T00:54:57.267+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

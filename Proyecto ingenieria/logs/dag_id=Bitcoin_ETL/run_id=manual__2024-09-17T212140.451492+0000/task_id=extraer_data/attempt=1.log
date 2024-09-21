@@ -1,0 +1,21 @@
+[2024-09-17T21:21:41.756+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-17T21:21:41.772+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T21:21:40.451492+00:00 [queued]>
+[2024-09-17T21:21:41.780+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T21:21:40.451492+00:00 [queued]>
+[2024-09-17T21:21:41.781+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 6
+[2024-09-17T21:21:41.798+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): extraer_data> on 2024-09-17 21:21:40.451492+00:00
+[2024-09-17T21:21:41.806+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=73) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-17T21:21:41.807+0000] {standard_task_runner.py:72} INFO - Started process 75 to run task
+[2024-09-17T21:21:41.807+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Bitcoin_ETL', 'extraer_data', 'manual__2024-09-17T21:21:40.451492+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/API_Crypto_Extraction.py', '--cfg-path', '/tmp/tmp3wi7yorn']
+[2024-09-17T21:21:41.810+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask extraer_data
+[2024-09-17T21:21:41.862+0000] {task_command.py:467} INFO - Running <TaskInstance: Bitcoin_ETL.extraer_data manual__2024-09-17T21:21:40.451492+00:00 [running]> on host 868230e8e335
+[2024-09-17T21:21:41.956+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NicolasRivas' AIRFLOW_CTX_DAG_ID='Bitcoin_ETL' AIRFLOW_CTX_TASK_ID='extraer_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-17T21:21:40.451492+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-17T21:21:40.451492+00:00'
+[2024-09-17T21:21:41.958+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-17T21:21:43.334+0000] {logging_mixin.py:190} INFO - Pushed data to XCom: {"id":{"0":"bitcoin","1":"ethereum","2":"tether","3":"binance-coin","4":"solana","5":"usd-coin","6":
+[2024-09-17T21:21:43.335+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-17T21:21:43.346+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-17T21:21:43.347+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Bitcoin_ETL, task_id=extraer_data, run_id=manual__2024-09-17T21:21:40.451492+00:00, execution_date=20240917T212140, start_date=20240917T212141, end_date=20240917T212143
+[2024-09-17T21:21:43.390+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-17T21:21:43.417+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-17T21:21:43.419+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

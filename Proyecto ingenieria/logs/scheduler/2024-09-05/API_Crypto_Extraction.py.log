@@ -1,0 +1,196 @@
+[2024-09-05T00:03:53.328+0000] {processor.py:186} INFO - Started process (PID=79) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:03:53.331+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:03:53.337+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:53.335+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:03:53.689+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:03:54.844+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:54.842+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:Bitcoin_ETL
+[2024-09-05T00:03:54.901+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:54.900+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:Bitcoin_ETL
+[2024-09-05T00:03:54.943+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:54.940+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:Bitcoin_ETL
+[2024-09-05T00:03:54.947+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:54.946+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:03:55.084+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:55.081+0000] {dag.py:3234} INFO - Creating ORM DAG for Bitcoin_ETL
+[2024-09-05T00:03:55.202+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:03:55.201+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:03:55.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 2.029 seconds
+[2024-09-05T00:04:31.242+0000] {processor.py:186} INFO - Started process (PID=141) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:04:31.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:04:31.247+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:04:31.247+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:04:31.332+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:04:31.417+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:04:31.416+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:04:31.473+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:04:31.472+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:04:31.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.301 seconds
+[2024-09-05T00:05:03.559+0000] {processor.py:186} INFO - Started process (PID=194) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:03.562+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:05:03.567+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:03.566+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:03.790+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:03.969+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:03.969+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:05:04.200+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:04.198+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:05:04.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.849 seconds
+[2024-09-05T00:05:35.832+0000] {processor.py:186} INFO - Started process (PID=255) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:35.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:05:35.847+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:35.846+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:36.065+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:05:36.192+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:36.182+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:05:36.392+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:05:36.391+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:05:36.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.977 seconds
+[2024-09-05T00:12:59.983+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:12:59.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:12:59.999+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:12:59.997+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:13:00.230+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:13:00.379+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:13:00.379+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:13:00.520+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:13:00.520+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:13:00.588+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.680 seconds
+[2024-09-05T00:13:46.124+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:13:46.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:13:46.132+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:13:46.131+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:13:46.232+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:13:46.285+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:13:46.285+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:13:46.354+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:13:46.353+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:13:46.408+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.316 seconds
+[2024-09-05T00:14:21.539+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:21.553+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:14:21.572+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:21.570+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:21.821+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:21.978+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:21.977+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:14:22.156+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:22.155+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-05T00:14:22.296+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.824 seconds
+[2024-09-05T00:14:52.695+0000] {processor.py:186} INFO - Started process (PID=263) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:52.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:14:52.701+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:52.700+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:52.796+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:14:52.901+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:52.901+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:14:52.987+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:14:52.986+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:14:53.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.418 seconds
+[2024-09-05T00:32:16.214+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:16.220+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:32:16.230+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:16.230+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:16.442+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:19.050+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:19.049+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:32:19.400+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:19.398+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:32:19.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 3.609 seconds
+[2024-09-05T00:32:50.389+0000] {processor.py:186} INFO - Started process (PID=156) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:50.392+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:32:50.395+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:50.394+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:50.464+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:32:50.551+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:50.550+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:32:50.641+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:32:50.640+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:32:50.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.342 seconds
+[2024-09-05T00:33:21.312+0000] {processor.py:186} INFO - Started process (PID=218) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:21.317+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:33:21.320+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:21.320+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:21.409+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:21.474+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:21.473+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:33:21.531+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:21.530+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:33:21.577+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.288 seconds
+[2024-09-05T00:33:52.161+0000] {processor.py:186} INFO - Started process (PID=281) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:52.164+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:33:52.170+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:52.168+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:52.239+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:33:52.339+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:52.338+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:33:52.482+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:33:52.482+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:33:52.643+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.506 seconds
+[2024-09-05T00:36:04.786+0000] {processor.py:186} INFO - Started process (PID=362) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:04.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:36:04.794+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:04.793+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:04.875+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:04.950+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:04.949+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:36:05.091+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:05.091+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:36:05.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.441 seconds
+[2024-09-05T00:36:36.028+0000] {processor.py:186} INFO - Started process (PID=425) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:36.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:36:36.034+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:36.033+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:36.101+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:36:36.148+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:36.147+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:36:36.201+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:36:36.200+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:36:36.233+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.223 seconds
+[2024-09-05T00:37:08.515+0000] {processor.py:186} INFO - Started process (PID=488) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:08.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:37:08.529+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:08.528+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:08.621+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:08.745+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:08.744+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:37:08.908+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:08.907+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:37:09.030+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.532 seconds
+[2024-09-05T00:37:39.936+0000] {processor.py:186} INFO - Started process (PID=551) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:39.937+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:37:39.940+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:39.940+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:39.982+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:37:40.022+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:40.021+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:37:40.066+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:37:40.065+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:37:40.112+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.186 seconds
+[2024-09-05T00:38:10.295+0000] {processor.py:186} INFO - Started process (PID=614) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:10.299+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:38:10.303+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:10.302+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:10.369+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:10.408+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:10.408+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:38:10.460+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:10.459+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:38:10.492+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.214 seconds
+[2024-09-05T00:38:41.023+0000] {processor.py:186} INFO - Started process (PID=677) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:41.025+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:38:41.028+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:41.027+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:41.094+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:38:41.135+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:41.134+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:38:41.201+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:38:41.201+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:38:41.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.241 seconds
+[2024-09-05T00:39:12.122+0000] {processor.py:186} INFO - Started process (PID=740) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:12.124+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:39:12.133+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:12.131+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:12.280+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:12.374+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:12.373+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:39:12.459+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:12.458+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:39:12.512+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.415 seconds
+[2024-09-05T00:39:42.730+0000] {processor.py:186} INFO - Started process (PID=802) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:42.732+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:39:42.737+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:42.736+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:42.802+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:39:42.844+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:42.843+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:39:42.889+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:39:42.889+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:39:42.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.216 seconds
+[2024-09-05T00:40:13.739+0000] {processor.py:186} INFO - Started process (PID=865) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:13.752+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:40:13.759+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:13.758+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:13.923+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:13.971+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:13.969+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:40:14.045+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:14.044+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:40:14.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.409 seconds
+[2024-09-05T00:40:32.050+0000] {processor.py:186} INFO - Started process (PID=916) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:32.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T00:40:32.057+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:32.056+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:32.382+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T00:40:32.520+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:32.519+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T00:40:32.699+0000] {logging_mixin.py:190} INFO - [2024-09-05T00:40:32.698+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T00:40:32.770+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 0.772 seconds
+[2024-09-05T01:38:10.463+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:10.475+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:38:10.519+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:10.509+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:19.631+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:19.790+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:19.789+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T01:38:19.845+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:19.845+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T01:38:19.915+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 9.585 seconds
+[2024-09-05T01:38:50.581+0000] {processor.py:186} INFO - Started process (PID=74) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:50.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:38:50.603+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:50.599+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:57.194+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:38:57.248+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:57.247+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T01:38:57.483+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:38:57.481+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T01:38:57.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 6.977 seconds
+[2024-09-05T01:39:27.975+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:39:27.978+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:39:27.981+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:39:27.980+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:39:29.231+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:39:29.265+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:39:29.264+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T01:39:29.297+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:39:29.296+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T01:39:29.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 1.376 seconds
+[2024-09-05T01:40:01.093+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:01.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:40:01.130+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:01.128+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:05.968+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:06.280+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:06.278+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T01:40:06.549+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:06.546+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T01:40:06.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 5.715 seconds
+[2024-09-05T01:40:37.391+0000] {processor.py:186} INFO - Started process (PID=103) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:37.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:40:37.463+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:37.460+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:50.096+0000] {processor.py:925} INFO - DAG(s) 'Bitcoin_ETL' retrieved from /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:40:50.569+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:50.566+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-05T01:40:50.866+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:40:50.865+0000] {dag.py:4138} INFO - Setting next_dagrun for Bitcoin_ETL to 2024-09-05 00:00:00+00:00, run_after=2024-09-06 00:00:00+00:00
+[2024-09-05T01:40:51.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/API_Crypto_Extraction.py took 13.747 seconds
+[2024-09-05T01:41:22.630+0000] {processor.py:186} INFO - Started process (PID=111) to work on /opt/airflow/dags/API_Crypto_Extraction.py
+[2024-09-05T01:41:22.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/API_Crypto_Extraction.py for tasks to queue
+[2024-09-05T01:41:22.677+0000] {logging_mixin.py:190} INFO - [2024-09-05T01:41:22.665+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/API_Crypto_Extraction.py
